@@ -137,7 +137,7 @@ h1,h2,h3,h4,h5,h6 {
             }
         }
         @include breakpoints(xlarge) {
-            padding: 0 150px !important;
+            padding: 0 350px !important;
         }
         @include breakpoints(extraLarge) {
             padding: 0 95px;
@@ -552,7 +552,18 @@ h1,h2,h3,h4,h5,h6 {
     content: '\f054';
     }
 
-
+    @include breakpoints(large) {
+        height: 90vh;
+      }
+      @include breakpoints(medium) {
+        height: 85vh;
+      }
+      @include breakpoints(small) {
+        height: 75vh;
+      }
+      @include breakpoints(mobile) {
+        height: 65vh;
+      }
 
 }
 

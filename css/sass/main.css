@@ -124,7 +124,7 @@ a:hover {
 }
 @media (min-width: 1401px) and (max-width: 300px) {
   .header .navbar {
-    padding: 0 150px !important;
+    padding: 0 350px !important;
   }
 }
 @media (min-width: 1201px) and (max-width: 1400px) {
@@ -602,6 +602,26 @@ a:hover {
 .header .swiper-button-next:after,
 .header .swiper-rtl .swiper-button-prev:after {
   content: "\f054";
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .header {
+    height: 90vh;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .header {
+    height: 85vh;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .header {
+    height: 75vh;
+  }
+}
+@media (min-width: 320px) and (max-width: 576px) {
+  .header {
+    height: 65vh;
+  }
 }
 
 /* Underline From Center */
