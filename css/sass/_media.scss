@@ -1,0 +1,10 @@
+$extra-small: 320px;
+$small: 576px;
+$medium: 767px;
+$width-mobile: 500px;
+
+$breakpoints: (
+  'extra-small': 320px,
+  'small':  576px,
+  'medium': 767px,
+) !default;
