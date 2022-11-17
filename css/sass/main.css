@@ -460,6 +460,12 @@ a:hover {
   left: 8%;
   right: auto;
 }
+@media (min-width: 320px) and (max-width: 576px) {
+  .header .swiper-button-prev, .header .swiper-rtl .swiper-button-next {
+    right: 2px;
+    left: auto;
+  }
+}
 .header .swiper-button-next, .header .swiper-rtl .swiper-button-prev {
   right: auto;
   left: 15%;
@@ -626,7 +632,7 @@ a:hover {
 .booken {
   position: relative;
   top: -100px;
-  z-index: 99;
+  z-index: 9;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .booken {
@@ -1320,6 +1326,23 @@ a:hover {
 }
 .project .swiper-wrapper {
   margin-bottom: 40px;
+}
+.project .swiper-container {
+  margin-top: 50px;
+  position: relative;
+}
+.project .arrow-left {
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+.project .arrow-right {
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+.project .swiper-slide.swiper-slide-active {
+  visibility: visible;
 }
 
 .turki {

@@ -436,6 +436,10 @@ h1,h2,h3,h4,h5,h6 {
     .swiper-button-prev, .swiper-rtl .swiper-button-next {
         left: 8%;
         right: auto;
+        @include breakpoints(mobile) {
+            right: 2px;
+            left: auto;
+        }
     }
     .swiper-button-next, .swiper-rtl .swiper-button-prev {
         right: auto;
@@ -590,7 +594,7 @@ h1,h2,h3,h4,h5,h6 {
 .booken {
     position: relative;
     top: -100px;
-    z-index: 99;
+    z-index: 9;
     @include breakpoints(medium) {
         top: -70px;
     }
@@ -1184,6 +1188,28 @@ h1,h2,h3,h4,h5,h6 {
     .swiper-wrapper {
         margin-bottom: 40px;
     }
+
+    .swiper-container {
+        margin-top: 50px;
+        position: relative;
+      }
+      
+      .arrow-left {
+        position: absolute;
+        top: 50%;
+        left: 0;
+      }
+      
+      .arrow-right {
+        position: absolute;
+        top: 50%;
+        right: 0;
+      }
+ 
+
+.swiper-slide.swiper-slide-active {
+    visibility: visible;
+}
 }
 // End Projects
 
