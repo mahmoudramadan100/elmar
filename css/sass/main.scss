@@ -112,20 +112,13 @@ h1,h2,h3,h4,h5,h6 {
         padding: 0 95px;
         border-bottom: 2px solid transparent;
         height: 110px;
-        @include breakpoints(medium) {
-            
-        }
         @include breakpoints(small) {
             top:0;
             height: 90px;
             padding: 0 15px;
             z-index: 99;
          }
-        @include breakpoints(mobile) {
-            top:0;
-            height: 90px;
-            padding: 0 15px;
-         }
+       
         .navbar-collapse {
 
             @include breakpoints(medium) {
@@ -144,7 +137,7 @@ h1,h2,h3,h4,h5,h6 {
             }
         }
         @include breakpoints(xlarge) {
-            padding: 0 350px !important;
+            padding: 0 150px !important;
         }
         @include breakpoints(extraLarge) {
             padding: 0 95px;
@@ -155,6 +148,11 @@ h1,h2,h3,h4,h5,h6 {
         @include breakpoints(medium) {
             background-color: $navbar-color;
         }
+        @include breakpoints(mobile) {
+            top:0;
+            height: 90px;
+            padding: 0 15px;
+         }
     } 
     .navbar-scroll {
         background-color: $navbar-color;
@@ -394,7 +392,8 @@ h1,h2,h3,h4,h5,h6 {
             right: 0;
         }
         @include breakpoints(mobile) {
-            max-width: 350px;
+            // max-width: 350px;
+            max-width: 265px;
             margin: 0 auto;
             text-align: center;
             left: 0;
@@ -416,6 +415,7 @@ h1,h2,h3,h4,h5,h6 {
             }
             @include breakpoints(mobile) {
                 font-size: 16px;
+                line-height: 1.7;
             }
 
         }
@@ -1723,7 +1723,7 @@ h1,h2,h3,h4,h5,h6 {
             @include breakpoints(mobile) {
                 padding-right: 5px;
                 color: $second-color;
-                font-size: 14px;
+                font-size: 12px;
             }
         }
         @include breakpoints(large) {
@@ -1838,7 +1838,12 @@ h1,h2,h3,h4,h5,h6 {
 
         @include breakpoints(mobile) {
             margin: 0 auto;
-            width: 50%;
+            width: 100%;
+            padding: 0;
+            display: flex;
+            display: flex;
+            justify-content: center;
+
          }
     }
 
