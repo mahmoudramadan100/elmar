@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/animate.min.css"/>
+    <link rel="stylesheet" href="css/modal-video.min.css"/>
     <link rel="stylesheet" href="css/sass/main.css">
 </head>
 <body>
@@ -292,7 +293,7 @@
                 </p>
                 <div class="btn">
                   <a href="#" class="more">المزيد عن مسكنك </a>
-                  <a href="#" class="promo-video">الفيديو التعريفى</a>
+                  <a href="#" class="promo-video js-modal-btn" data-video-id="GEPxN7P8Qzc">الفيديو التعريفى</a>
                 </div>
               </div>
             </div>
@@ -1262,10 +1263,14 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/all.min.js"></script>
     <script src="js/wow.min.js"></script>
+    <script src="js/jquery-modal-video.min.js"></script>
     <!-- Swiper JS -->
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
     <script>
+
+    $(".js-modal-btn").modalVideo();
+
        // navbar mobile
       $(function () {  
         $("#menu").hide();

@@ -39,7 +39,7 @@ window.onscroll = () => {
 // Project
 var swiper = new Swiper(".slide-project", {
     slidesPerView: 4,
-    spaceBetween: 100,
+    spaceBetween: 10,
     cssMode: false,
     loop: false,
     centeredSlides: false,
