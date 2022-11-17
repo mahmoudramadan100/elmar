@@ -77,19 +77,19 @@ var swiper = new Swiper(".slide-project", {
 
 
   // navbar mobile
-  $(function () {
-    $(".navbar-toggler").click(function () {
-      $(".menu").css({
-        right: "0",
-      });
-  })
+//   $(function () {
+//     $(".navbar-toggler").click(function () {
+//       $(".menu").css({
+//         right: "0",
+//       });
+//   })
 
-  $(".close-icon").click(function () {
-      $(".menu").css({
-        display: "none",
-      });
-  });
-});
+//   $(".close-icon").click(function () {
+//       $(".menu").css({
+//         display: "none",
+//       });
+//   });
+// });
 
 
 let close = document.getElementById('close-icon');

@@ -102,7 +102,7 @@ a:hover {
     top: 0;
     height: 90px;
     padding: 0 15px;
-    z-index: 999;
+    z-index: 99;
   }
 }
 @media (min-width: 320px) and (max-width: 576px) {
@@ -533,14 +533,14 @@ a:hover {
 @media (min-width: 576px) and (max-width: 767px) {
   .header .swiper-button-prev,
 .header .swiper-rtl .swiper-button-next {
-    left: 0;
+    left: 5px !important;
     right: auto;
   }
 }
 @media (min-width: 320px) and (max-width: 576px) {
   .header .swiper-button-prev,
 .header .swiper-rtl .swiper-button-next {
-    left: 0;
+    left: 5px !important;
     right: auto;
   }
 }
@@ -553,14 +553,14 @@ a:hover {
   .header .swiper-button-next,
 .header .swiper-rtl .swiper-button-prev {
     left: auto;
-    right: 0;
+    right: 5px !important;
   }
 }
 @media (min-width: 320px) and (max-width: 576px) {
   .header .swiper-button-next,
 .header .swiper-rtl .swiper-button-prev {
     left: auto;
-    right: 0;
+    right: 5px !important;
   }
 }
 .header .swiper-button-next:after,

@@ -1083,7 +1083,7 @@
             <h4>الوحدات 
               <br>
               المسلمة  </h4>
-            <p> +68 </p>
+            <p class="counter-value" data-count="68"> + 0 </p>
           </div>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-6">
@@ -1092,7 +1092,7 @@
             <h4>الوحدات
               <br>
               قيد التطوير </h4>
-            <p> +722 </p>
+            <p class="counter-value" data-count="722"> + 0 </p>
           </div>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-6">
@@ -1101,7 +1101,7 @@
             <h4> إجمالى 
               <br>
               عدد المشاريع  </h4>
-            <p> +884 </p>
+            <p class="counter-value" data-count="884"> + 0 </p>
           </div>
         </div>
       </div>
@@ -1266,7 +1266,7 @@
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
     <script>
-
+       // navbar mobile
       $(function () {  
         $("#menu").hide();
 
@@ -1281,6 +1281,40 @@
             $(".navbar-toggler").show();
         });
       });
+
+      // Counter
+      var a = 0;
+$(window).scroll(function() {
+
+  var oTop = $('.achievement').offset().top - window.innerHeight;
+  if (a == 0 && $(window).scrollTop() > oTop) {
+    $('.counter-value').each(function() {
+      var $this = $(this),
+        countTo = $this.attr('data-count');
+      $({
+        countNum: $this.text()
+      }).animate({
+          countNum: countTo
+        },
+
+        {
+
+          duration: 5000,
+          easing: 'swing',
+          step: function() {
+            $this.text(Math.floor(this.countNum));
+          },
+          complete: function() {
+            $this.text(this.countNum);
+            // alert('finished');
+          }
+
+        });
+    });
+    a = 1;
+  }
+
+});
 
     </script>
   
