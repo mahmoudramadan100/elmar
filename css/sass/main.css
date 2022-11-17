@@ -645,12 +645,12 @@ a:hover {
   transition-property: left, right;
   transition-duration: 0.3s;
   transition-timing-function: ease-out;
+  border-color: #000 transparent transparent transparent;
 }
 .hvr-underline-from-center:hover::before {
   left: 0;
   right: 0;
 }
-
 .booken {
   position: relative;
   top: -100px;
