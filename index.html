@@ -36,15 +36,20 @@
  
   <!-- NAV Mobile -->
 <div class="menu" id="menu">
-    <i class="fa fa-close close-icon" id="close-icon"></i>
-    <ul class="navbar-nav list-unstyled">
+  <div class="close-icon" id="close">
+    <i class="fa fa-close close-icon" id="close"></i>
+  </div>
+    <div class="list-unstyled">
+
+    
+    <ul class="navbar-nav">
       <li class="nav-item active">
         <a class="nav-link hvr-underline-from-center" href="#">الرئيسيه</a>
       </li>
       <li class="nav-item">
         <a class="nav-link hvr-underline-from-center" href="#">الرؤية و الرساله</a>
       </li>
-      <li class="nav-item underline-from-center">
+      <li class="nav-item">
         <a class="nav-link hvr-underline-from-center" href="#">عملاؤنا</a>
       </li>
       <li class="nav-item">
@@ -56,7 +61,23 @@
       <li class="nav-item">
         <a class="nav-link hvr-underline-from-center" href="#">اتصل بنا</a>
       </li>
+      <ul class="btn-navbar mr-auto">
+        <li>
+          <a href="#" class="order">
+            اطلب مسكنك
+          </a>
+        </li>
+        <li>
+          <a href="#" class="user-login">
+            <i class="fa-regular fa-user"></i>
+          دخول
+          </a>
+        </li>
+      </ul>
     </ul>
+
+   
+  </div>
 </div>
 
     <!-- Start Header -->
@@ -67,7 +88,7 @@
         <a class="navbar-brand" href="#">
           <img src="img/logo.png" alt="logo">
         </a>
-        <button class="navbar-toggler" type="button">
+        <button class="navbar-toggler" type="button" id="btn-nav">
           <i class="fa-solid fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -78,7 +99,7 @@
             <li class="nav-item">
               <a class="nav-link hvr-underline-from-center" href="#">الرؤية و الرساله</a>
             </li>
-            <li class="nav-item underline-from-center">
+            <li class="nav-item">
               <a class="nav-link hvr-underline-from-center" href="#">عملاؤنا</a>
             </li>
             <li class="nav-item">
@@ -1244,6 +1265,24 @@
     <!-- Swiper JS -->
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+
+      $(function () {  
+        $("#menu").hide();
+
+        $(".navbar-toggler").on('click', function() {
+            $("#menu").slideToggle( "slow", function() {
+              transition: "0.2s all"
+      });
+        });
+
+        $(".close-icon").on('click', function() {
+            $("#menu").hide();
+            $(".navbar-toggler").show();
+        });
+      });
+
+    </script>
   
 </body>
 </html>

@@ -102,6 +102,7 @@ a:hover {
     top: 0;
     height: 90px;
     padding: 0 15px;
+    z-index: 999;
   }
 }
 @media (min-width: 320px) and (max-width: 576px) {
@@ -2209,28 +2210,26 @@ button.navbar- {
 }
 
 .menu {
+  display: none;
   z-index: 999;
   position: fixed;
   background-color: #202b5a;
   top: 0;
-  left: -10px;
-  margin-left: -215px;
+  right: 0;
   max-width: 400px;
-  min-width: 225px;
+  min-width: 300px;
   height: 100vh;
   display: block;
   border: 1px solid #cfaf6d;
-  transition: all 0.7s ease-in-out;
-  -webkit-transition: all 0.7s ease-in-out;
-  -moz-transition: all 0.7s ease-in-out;
-  -ms-transition: all 0.7s ease-in-out;
-  -o-transition: all 0.7s ease-in-out;
+  border-radius: 0 0 0 350px;
+  transition: all 0.4s ease-in-out;
+  text-align: right;
 }
 .menu ul {
   margin-top: 10px;
 }
 .menu ul li {
-  margin: 5px 0;
+  margin: 3px 0;
   text-align: right;
 }
 .menu ul li a {
@@ -2247,6 +2246,31 @@ button.navbar- {
   -moz-transition: all 0.3s;
   -ms-transition: all 0.3s;
   -o-transition: all 0.3s;
+}
+.menu .list-unstyled {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: flex-start;
+}
+.menu .btn-navbar {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.menu .btn-navbar li {
+  padding: 5px 3px;
+  background-color: #cfaf6d;
+  color: #fff;
+  text-align: center;
+  border-radius: 3px;
+  font-size: 13px;
+  margin: 5px;
+}
+.menu .btn-navbar li a {
+  transition: 0.3s all;
+}
+.menu .btn-navbar li a:hover {
+  color: #202b5a;
 }
 @media (min-width: 1201px) and (max-width: 1400px) {
   .menu {
@@ -2283,11 +2307,4 @@ button.navbar- {
   opacity: 0.5;
   color: #efefef;
   cursor: pointer;
-}
-
-ul.navbar-nav.list-unstyled {
-  display: flex;
-  height: 100vh;
-  align-items: center;
-  justify-content: center;
 }/*# sourceMappingURL=main.css.map */

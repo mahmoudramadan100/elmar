@@ -92,8 +92,9 @@ var swiper = new Swiper(".slide-project", {
 });
 
 
-// let close = document.getElementById('close-icon');
-// let menu = document.getElementById('menu');
+let close = document.getElementById('close-icon');
+let menu = document.getElementById('menu');
+const navMobile = document.getElementsById('navbar');
 
 // close.style.marginLeft = "-250px"
 
@@ -105,3 +106,10 @@ var swiper = new Swiper(".slide-project", {
 //   body.style.backgroundColor = "blue"
 
 // }
+
+
+
+// close.onclick = () => {
+//   menu.style.backgroundColor = "blue"
+// };
+
