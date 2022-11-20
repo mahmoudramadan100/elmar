@@ -31,6 +31,7 @@
     <link rel="stylesheet" href="css/sass/main.css">
 </head>
 <body>
+  <div class="overlay"></div>
     <!-- Start Header -->
     <header class="header">
         <!-- Start Navbar -->
@@ -46,7 +47,6 @@
         </button>
 
         <div class="collapse navbar-collapse navbar-mobile" id="navbarTogglerDemo01">
-          <div class="overlay"></div>
           <ul class="navbar-nav">
             <li class="nav-item active">
               <a class="nav-link hvr-underline-from-center" href="#">الرئيسيه</a>
@@ -1242,28 +1242,10 @@
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
     <script>
-    
-
-
-       // navbar mobile
-      $(function () {  
-        $(".menu").hide();
-
-        $(".nav-open").on('click', function() {
-            $(".collapse").slideToggle( "fast", function() {
-              transition: "0.1s all"
-      });
-        });
-
-        $(".close-icon").on('click', function() {
-            $(".collapse").hide();
-            $(".nav-open").show();
-        });
-      });
 
       // Counter
       var a = 0;
-$(window).scroll(function() {
+  $(window).scroll(function() {
 
   var oTop = $('.achievement').offset().top - window.innerHeight;
   if (a == 0 && $(window).scrollTop() > oTop) {

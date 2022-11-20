@@ -16,7 +16,7 @@
 body {
     font-family: 'NotoKufiArabic', sans-serif;
     box-sizing: border-box;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     text-align: right;
     direction: rtl; 
 }
@@ -2191,43 +2191,28 @@ h1,h2,h3,h4,h5,h6 {
 
 
 
-
-
-
-  .overlay {
-    position: absolute;
-    width: 100vw;
-    height: 100hv;
-    background-color: $navbar-color;
-    top: 0;
-    right: 0;
-    overflow: hidden;
-}
-
-
     .navbar-mobile {
     display: none;
 
-
     @include breakpoints(medium) {
         background-color: $second-color;
-    padding: 20px;
-    text-align: center;
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 300px;
-    height: 100%;
-    border: 1px solid $main-color;
-    border-radius: 0 0 0 250px;
-    transition: 0.4s all;
-    .navbar-nav {
-        display: flex;
-        flex-direction: column;
+        padding: 20px;
         text-align: center;
-        .nav-item {
-            padding: 5px 0;
-        }
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 300px;
+        height: 100%;
+        border: 1px solid $main-color;
+        border-radius: 0 0 0 250px;
+        transition: 0.4s all;
+        .navbar-nav {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            .nav-item {
+                padding: 5px 0;
+            }
     }
    
     }
@@ -2255,24 +2240,24 @@ h1,h2,h3,h4,h5,h6 {
     }
     @include breakpoints(mobile) {
         background-color: $second-color;
-    padding: 20px;
-    text-align: center;
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 300px;
-    height: 100vh;
-    border: 1px solid $main-color;
-    border-radius: 0 0 0 250px;
-    transition: 0.4s all;
-    .navbar-nav {
-        display: flex;
-        flex-direction: column;
+        padding: 20px;
         text-align: center;
-        .nav-item {
-            padding: 5px 0;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 300px;
+        height: 100vh;
+        border: 1px solid $main-color;
+        border-radius: 0 0 0 250px;
+        transition: 0.4s all;
+        .navbar-nav {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            .nav-item {
+                padding: 5px 0;
+            }
         }
-    }
    
     }
     

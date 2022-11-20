@@ -119,10 +119,11 @@ $(document).ready(function() {
 });
 
 
-$(document).ready(function(){
-  if ($('.navbar-mobile').is(':block')) {
-  $('body').addClass("overlay");
-} else {
-  $('body').removeClass("overlay");
-}
-});
+
+$(document).ready(()=>{
+  let isMenuAlreadyOpen = false;
+  $('.navbar-toggler-icon').on('click',()=>{
+        $('body').css("overflow",isMenuAlreadyOpen?"auto":"hidden")
+        isMenuAlreadyOpen = !isMenuAlreadyOpen
+  })
+})
