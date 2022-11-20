@@ -121,6 +121,8 @@ h1,h2,h3,h4,h5,h6 {
     width: 100%;
     position: relative;
 
+
+
     .navbar {
         background-color: $navbar-color;
         color: $white-color;
@@ -167,17 +169,40 @@ h1,h2,h3,h4,h5,h6 {
         @include breakpoints(large) {
             padding: 0 35px;
         }
-        @include breakpoints(medium) {
+        @include breakpoints(small) {
+            top:0;
+            height: 60px;
+            padding: 0 15px;
             background-color: $navbar-color;
+            color: $white-color;
+            position: fixed;
+            top: 0;
+            right: 0;
+            z-index: 99;
+            width: 100%;
+            height: auto;
+            border-bottom: 2px solid transparent;
+            text-align: center;
         }
         @include breakpoints(mobile) {
             top:0;
-            height: 90px;
+            height: 60px;
             padding: 0 15px;
+            background-color: $navbar-color;
+            color: $white-color;
+            position: fixed;
+            top: 0;
+            right: 0;
+            z-index: 99;
+            width: 100%;
+            height: auto;
+            border-bottom: 2px solid transparent;
+            text-align: center;
         }
     } 
     .navbar-scroll {
         background-color: $navbar-color;
+        border-bottom: 2px solid $main-color;
         color: $white-color;
         position: fixed;
         top: 0;
@@ -187,7 +212,6 @@ h1,h2,h3,h4,h5,h6 {
         padding: 0 100px;
         height: 75px;
         transition: 0.3s all;
-        border-bottom: 2px solid $main-color;
 
         @include breakpoints(large) {
             padding: 0 40px;
@@ -197,13 +221,14 @@ h1,h2,h3,h4,h5,h6 {
         }
         @include breakpoints(small) {
             padding: 0 15px;
-            background-color: transparent;
-            border-color: transparent;
+            background-color: $navbar-color;
+            border-bottom: 2px solid $main-color;
         }
         @include breakpoints(mobile) {
             padding: 0 15px;
-            background-color: transparent;
-            border-color: transparent;
+            background-color: $navbar-color;
+            border-bottom: 2px solid $main-color;
+            height: 55px;
         }
 
         .navbar-brand {
@@ -215,12 +240,12 @@ h1,h2,h3,h4,h5,h6 {
                 object-fit: cover;
             }
             @include breakpoints(small) {
-                width: 50px;
+                width: 40px;
                 height: 100%;
                 object-fit: contain;
             }
             @include breakpoints(mobile) {
-                width: 50px;
+                width: 35px;
                 height: 100%;
                 object-fit: contain;
             }
@@ -249,7 +274,7 @@ h1,h2,h3,h4,h5,h6 {
             overflow: hidden;
         }
         @include breakpoints(mobile) {
-            width: 50px;
+            width: 35px;
             height: 100%;
             overflow: hidden;
         }
@@ -257,7 +282,7 @@ h1,h2,h3,h4,h5,h6 {
 
     a {
         color: $white-color;
-    };
+    }
     .navbar-nav {
         display: flex;
         margin: 0 auto;
@@ -298,19 +323,16 @@ h1,h2,h3,h4,h5,h6 {
         }
         .collapse.show {
             @include breakpoints(medium) {
-                background-color: $main-color;
             }
             @include breakpoints(small) {
-                background-color: $second-color !important;
+               
             }
         }
         @include breakpoints(medium) {
             padding: 10px;
             
         }
-        @include breakpoints(small) {
-            background-color: $second-color !important;
-        }
+        
     }
     .btn-navbar {
         display: flex;
@@ -320,6 +342,7 @@ h1,h2,h3,h4,h5,h6 {
         margin: 5px 0;
         @include breakpoints(medium) {
             padding: 0 10px;
+            
         }
         @include breakpoints(small) {
             padding: 0 10px;
@@ -327,6 +350,15 @@ h1,h2,h3,h4,h5,h6 {
 
         li {
             margin: 12px 0;
+            @include breakpoints(medium) {
+                margin: 12px auto;
+            }
+            @include breakpoints(small) {
+                margin: 12px auto;
+            }
+            @include breakpoints(mobile) {
+                margin: 12px auto;
+            }
         }
         .order {
             font-size: 14px;
@@ -373,30 +405,16 @@ h1,h2,h3,h4,h5,h6 {
         }
     }
 
+
+    // @include breakpoints(small) {
+    //     .collapse.show {
+    //         display: block;
+    //         height: 100vh;
+    //         overflow: hidden;
+    //     }
+    // }
     .show {
-        z-index: 999;
-        position: fixed;
-        background-color: $second-color;
-        top: 0;
-        right: 0;
-        max-width: 400px;
-        min-width: 300px;
-        height: 100vh;
-        display: block;
-        overflow: hidden;
-        border: 1px solid $main-color;
-        border-radius: 0 0 0 350px;
-        transition: all 0.2s ease-in-out;
-        text-align: right;
-        -webkit-transition: all 0.2s ease-in-out;
-        -moz-transition: all 0.2s ease-in-out;
-        -ms-transition: all 0.2s ease-in-out;
-        -o-transition: all 0.2s ease-in-out;
-    
-        ul {
-            position: relative;
-            top: 10%;
-        }
+        
         
         @include breakpoints(extraLarge) {
             display: none;
@@ -630,6 +648,8 @@ h1,h2,h3,h4,h5,h6 {
         height: 65vh;
       }
 
+     
+
 }
 
 
@@ -697,6 +717,7 @@ h1,h2,h3,h4,h5,h6 {
             border-radius: 4px;
             padding: 5px 10px;
             font-size: 14px;
+            width: 100%;
             background-color: $login-color;
             color: $white-color;
             border: 1px solid $border-color;
@@ -727,6 +748,10 @@ h1,h2,h3,h4,h5,h6 {
                 padding: 10px 0;
             }
         }
+        @include breakpoints(mobile) {
+            font-size: 13px;
+        }
+
     }
 
     .select2-container {
@@ -742,10 +767,21 @@ h1,h2,h3,h4,h5,h6 {
         color: $white-color;
         border: 1px solid #aaacb3;
         cursor: pointer;
+
+        @include breakpoints(small) {
+            .select2-selection {
+                font-size: 14px !important;
+            }
+        }
+        @include breakpoints(mobile) {
+            .select2-selection {
+                font-size: 12px !important;
+            }
+        }
     }
     .select2-container--default .select2-selection--single .select2-selection__rendered {
         color: $white-color;
-        background-color: $login-colorك
+        background-color: transparent;
     }
     .select2-container--default .select2-selection--single {
         background-color: transparent;
@@ -767,6 +803,17 @@ h1,h2,h3,h4,h5,h6 {
         position: absolute;
         top: 50%;
         width: 0;
+    }
+
+    @include breakpoints(small) {
+        .select2-selection {
+            font-size: 13px;
+        }
+    }
+    @include breakpoints(mobile) {
+        .select2-selection {
+            font-size: 13px !important;
+        }
     }
 
 }
@@ -1931,7 +1978,7 @@ h1,h2,h3,h4,h5,h6 {
         list-style: none;
         display: flex;
         align-items: center;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
         padding-right: 0;
         margin-bottom: 0;
@@ -2155,3 +2202,20 @@ h1,h2,h3,h4,h5,h6 {
         }
     }
 }
+
+// div#navbarTogglerDemo01 {
+//     position: fixed;
+//     top: 0;
+//     right: 0;
+//     width: 300px;
+//     background: red;
+//     height: 100%;
+//     transition: 0.5s all;
+// }
+
+
+
+.fixed-position {
+    position: fixed;
+    overflow: hidden;
+  }
