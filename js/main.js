@@ -91,11 +91,7 @@ var swiper = new Swiper(".slide-project", {
 
 
 
-  // if ($('.show').is(':block')) {
-  //   $('body').addClass("fixed-position");
-  // } else {
-  //   $('body').removeClass("fixed-position");
-  // }
+  
 
 //   $(function () {
 //     $(".navbar-toggler").click(function () {
@@ -123,4 +119,10 @@ $(document).ready(function() {
 });
 
 
-
+$(document).ready(function(){
+  if ($('.navbar-mobile').is(':block')) {
+  $('body').addClass("overlay");
+} else {
+  $('body').removeClass("overlay");
+}
+});

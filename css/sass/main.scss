@@ -143,13 +143,6 @@ h1,h2,h3,h4,h5,h6 {
             z-index: 99;
         }
 
-        // .navbar-collapse {
-
-        //     @include breakpoints(medium) {
-        //         background-color: $navbar-color;
-        //         border-bottom: 2px solid transparent;
-        //     }
-        // }
         .navbar-toggler {
             background-color: transparent;
             outline: none;
@@ -406,13 +399,6 @@ h1,h2,h3,h4,h5,h6 {
     }
 
 
-    // @include breakpoints(small) {
-    //     .collapse.show {
-    //         display: block;
-    //         height: 100vh;
-    //         overflow: hidden;
-    //     }
-    // }
     .show {
         
         
@@ -576,7 +562,6 @@ h1,h2,h3,h4,h5,h6 {
         left: 8% !important;
         right: auto;
     
-          
         @include breakpoints(small) {
             left: 5px !important;
             right: auto;
@@ -591,7 +576,6 @@ h1,h2,h3,h4,h5,h6 {
         left: 14% !important;
         right: auto;
 
-       
         @include breakpoints(small) {
             left: auto;
             right: 5px !important;
@@ -647,8 +631,6 @@ h1,h2,h3,h4,h5,h6 {
       @include breakpoints(mobile) {
         height: 65vh;
       }
-
-     
 
 }
 
@@ -2203,19 +2185,92 @@ h1,h2,h3,h4,h5,h6 {
     }
 }
 
-// div#navbarTogglerDemo01 {
-//     position: fixed;
-//     top: 0;
-//     right: 0;
-//     width: 300px;
-//     background: red;
-//     height: 100%;
-//     transition: 0.5s all;
-// }
 
 
 
-.fixed-position {
-    position: fixed;
+
+
+
+  .overlay {
+    position: absolute;
+    width: 100vw;
+    height: 100hv;
+    background-color: $navbar-color;
+    top: 0;
+    right: 0;
     overflow: hidden;
+}
+
+
+    .navbar-mobile {
+    display: none;
+
+
+    @include breakpoints(medium) {
+        background-color: $second-color;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100vh;
+    border: 1px solid $main-color;
+    border-radius: 0 0 0 250px;
+    transition: 0.4s all;
+    .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        .nav-item {
+            padding: 5px 0;
+        }
+    }
+   
+    }
+    @include breakpoints(small) {
+        background-color: $second-color;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100vh;
+    border: 1px solid $main-color;
+    border-radius: 0 0 0 250px;
+    transition: 0.4s all;
+    .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        .nav-item {
+            padding: 5px 0;
+        }
+    }
+    
+    }
+    @include breakpoints(mobile) {
+        background-color: $second-color;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100vh;
+    border: 1px solid $main-color;
+    border-radius: 0 0 0 250px;
+    transition: 0.4s all;
+    .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        .nav-item {
+            padding: 5px 0;
+        }
+    }
+   
+    }
+    
   }

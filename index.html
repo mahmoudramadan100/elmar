@@ -39,13 +39,14 @@
         <a class="navbar-brand" href="#">
           <img src="img/logo.png" alt="logo">
         </a>
-        <div class="navbar-toggler" data-toggle="collapse" data-target="#navbarTogglerDemo01">
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarTogglerDemo01" id="mob-menu-btn">
           <div class="navbar-toggler-icon">
             <i class="fa-solid fa-bars"></i>
           </div>
-        </div>
+        </button>
 
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <div class="collapse navbar-collapse navbar-mobile" id="navbarTogglerDemo01">
+          <div class="overlay"></div>
           <ul class="navbar-nav">
             <li class="nav-item active">
               <a class="nav-link hvr-underline-from-center" href="#">الرئيسيه</a>
@@ -1241,7 +1242,8 @@
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
     <script>
-  
+    
+
 
        // navbar mobile
       $(function () {  
