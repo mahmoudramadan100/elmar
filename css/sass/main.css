@@ -785,6 +785,20 @@ a:hover {
     padding: 10px 0;
   }
 }
+.booken .select2-container {
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 0;
+  position: relative;
+  vertical-align: middle;
+  border-radius: 4px;
+  padding: 5px 10px;
+  font-size: 14px;
+  background-color: rgba(103, 111, 128, 0.8);
+  color: #fff;
+  border: 1px solid #aaacb3;
+  cursor: pointer;
+}
 
 .about {
   padding-bottom: 240px;

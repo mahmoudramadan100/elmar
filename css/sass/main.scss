@@ -729,6 +729,46 @@ h1,h2,h3,h4,h5,h6 {
         }
     }
 
+    .select2-container {
+        box-sizing: border-box;
+        display: inline-block;
+        margin: 0;
+        position: relative;
+        vertical-align: middle;
+        border-radius: 4px;
+        padding: 5px 10px;
+        font-size: 14px;
+        background-color: $login-color;
+        color: $white-color;
+        border: 1px solid #aaacb3;
+        cursor: pointer;
+    }
+    .select2-container--default .select2-selection--single .select2-selection__rendered {
+        color: $white-color;
+        background-color: $login-colorك
+    }
+    .select2-container--default .select2-selection--single {
+        background-color: transparent;
+        border: none;
+        border-radius: 0;
+    }
+    .select2-container--default .select2-selection--single .select2-selection__rendered {
+        color: #fff !important;
+        line-height: 28px;
+    }
+    .select2-container--default .select2-selection--single .select2-selection__arrow b {
+        border-color: #fff transparent transparent transparent !important;
+        border-style: solid;
+        border-width: 5px 4px 0 4px;
+        height: 0;
+        left: 50%;
+        margin-left: -4px;
+        margin-top: -2px;
+        position: absolute;
+        top: 50%;
+        width: 0;
+    }
+
 }
 // End Booken
 // Start About

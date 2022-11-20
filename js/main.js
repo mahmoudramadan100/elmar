@@ -105,3 +105,12 @@ var swiper = new Swiper(".slide-project", {
 // });
 
 
+$(document).ready(function() {
+    $('.single-01').select2();
+    $('.multiple').select2();
+    $('.single-03').select2();
+    $('.single-04').select2();
+    $('.single-05').select2();
+    $('.single-06').select2();
+    $('.single-7').select2();
+});
