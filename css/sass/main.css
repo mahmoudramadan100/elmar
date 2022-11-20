@@ -932,6 +932,11 @@ a:hover {
   padding: 20px 15px 0 0;
   margin: 30px 0;
 }
+@media (min-width: 320px) and (max-width: 576px) {
+  .pro .box .text {
+    padding: 20px 15px 0 10px;
+  }
+}
 .pro .box h1 {
   padding: 20px 15px 0 0;
   font-size: 24px;
@@ -951,7 +956,7 @@ a:hover {
   .pro .box h1 {
     padding: 0;
     font-size: 18px;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
     line-height: 1.4;
     text-align: center;
   }
@@ -960,7 +965,7 @@ a:hover {
   .pro .box h1 {
     padding: 0;
     font-size: 16px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     line-height: 1.3;
     text-align: center;
   }
@@ -1368,6 +1373,16 @@ a:hover {
 }
 .project .box:hover {
   box-shadow: 0px 7px 16px -16px rgba(63, 73, 97, 0.9);
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .project .box {
+    margin: 20px auto 0;
+  }
+}
+@media (min-width: 320px) and (max-width: 576px) {
+  .project .box {
+    margin: 20px auto 0;
+  }
 }
 .project .swiper-pagination-bullet {
   background-color: #202b5a !important;
@@ -2117,6 +2132,16 @@ a:hover {
   .up-footer .info {
     padding: 10px 20px;
     text-align: right;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .up-footer {
+    padding: 0;
+  }
+}
+@media (min-width: 320px) and (max-width: 576px) {
+  .up-footer {
+    padding: 0;
   }
 }
 
