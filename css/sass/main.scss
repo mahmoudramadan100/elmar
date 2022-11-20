@@ -193,15 +193,15 @@ h1,h2,h3,h4,h5,h6 {
             padding: 0 40px;
         }
         @include breakpoints(medium) {
-            padding: 0;
+            padding: 0 20px;
         }
         @include breakpoints(small) {
-            padding: 0;
+            padding: 0 15px;
             background-color: transparent;
             border-color: transparent;
         }
         @include breakpoints(mobile) {
-            padding: 0;
+            padding: 0 15px;
             background-color: transparent;
             border-color: transparent;
         }
@@ -214,10 +214,14 @@ h1,h2,h3,h4,h5,h6 {
                 height: 100%;
                 object-fit: cover;
             }
-            
+            @include breakpoints(small) {
+                width: 50px;
+                height: 100%;
+                object-fit: contain;
+            }
             @include breakpoints(mobile) {
-                width: 35px;
-                height: 60px;
+                width: 50px;
+                height: 100%;
                 object-fit: contain;
             }
         }
@@ -240,29 +244,17 @@ h1,h2,h3,h4,h5,h6 {
             object-fit: cover;
         }
         @include breakpoints(small) {
-            width: 40px;
-            height: 70px;
+            width: 50px;
+            height: 100%;
             overflow: hidden;
         }
         @include breakpoints(mobile) {
-            width: 40px;
-            height: 70px;
+            width: 50px;
+            height: 100%;
             overflow: hidden;
         }
     }
 
-    // .collapse.show {
-       
-    //     @include breakpoints(mobile) {
-    //         display: block;
-    //         position: fixed;
-    //         top: 90px;
-    //         left: 0;
-    //         width: 103%;
-    //         background: $navbar-color;
-    //         padding: 0;
-    //     }
-    // }
     a {
         color: $white-color;
     };
@@ -467,7 +459,7 @@ h1,h2,h3,h4,h5,h6 {
             left: 0;
             right: 0;
             top: 30%;
-            padding: 20px 15px;
+            padding: 0px 15px;
         }
 
         h1 {
@@ -554,9 +546,11 @@ h1,h2,h3,h4,h5,h6 {
       }
     @include breakpoints(small) {
         padding: 15px 20px;
+        top: 60%;
       }
       @include breakpoints(mobile) {
         padding: 15px 20px;
+        top: 55%;
       }
 }
     .swiper-button-prev,
@@ -1095,6 +1089,7 @@ h1,h2,h3,h4,h5,h6 {
         border-radius: 5px;
         transition: .5s all;
         overflow: hidden;
+        cursor: pointer;
         .img {
             width: 250px;
             height: 250px;
@@ -1175,6 +1170,7 @@ h1,h2,h3,h4,h5,h6 {
             .text-1 {
                 margin: 7px 0;
                 padding-right: 10px;
+                transition: 0.5s all;
                 h5 {
                     color: $second-color;
                     font-size: 15px;
@@ -2075,3 +2071,31 @@ h1,h2,h3,h4,h5,h6 {
     transform: translateY(5px);
 }
 
+// Modal Video
+.modal {
+    border: none;
+    .modal-content {
+        width: 100%;
+        background: transparent;
+        border: none;
+
+        .modal-header {
+            border: none;
+        }
+        .close {
+            outline: none;
+            color: $main-color;
+                &:hover {
+                    color: $white-color
+                }
+        }
+        iframe {
+            width: 560px;
+            height: 350px;
+            @include breakpoints(mobile) {
+                max-width: 100%;
+                height: 250px;
+            }
+        }
+    }
+}

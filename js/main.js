@@ -90,18 +90,18 @@ var swiper = new Swiper(".slide-project", {
 
 
 
-  $(function () {
-    $(".navbar-toggler").click(function () {
-      $("body").css({
-        overflow: "hidden",
-      });
-  })
+//   $(function () {
+//     $(".navbar-toggler").click(function () {
+//       $("body").css({
+//         overflow: "hidden",
+//       });
+//   })
 
-  $("navbar-toggler").click(function () {
-      $("body").css({
-        overflow: "auto",
-      });
-  });
-});
+//   $("navbar-toggler").click(function () {
+//       $("body").css({
+//         overflow: "auto",
+//       });
+//   });
+// });
 
 
