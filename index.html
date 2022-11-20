@@ -25,62 +25,12 @@
     <meta name="theme-color" content="#ffffff">
     <!-- Add Style Link -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css.map" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="css/animate.min.css"/>
-    <link rel="stylesheet" href="css/modal-video.min.css"/>
+    <link rel="stylesheet" href="css/select2.min.css"/>
     <link rel="stylesheet" href="css/sass/main.css">
 </head>
 <body>
-
- 
-  <!-- NAV Mobile -->
-<div class="menu" id="menu">
-  <div class="close-icon" id="close">
-    <i class="fa fa-close close-icon" id="close"></i>
-  </div>
-    <div class="list-unstyled">
-
-    
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link hvr-underline-from-center" href="#">الرئيسيه</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link hvr-underline-from-center" href="#">الرؤية و الرساله</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link hvr-underline-from-center" href="#">عملاؤنا</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link hvr-underline-from-center" href="#">الهيكل التنظيمى</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link hvr-underline-from-center" href="#">من نحن</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link hvr-underline-from-center" href="#">اتصل بنا</a>
-      </li>
-      <ul class="btn-navbar mr-auto">
-        <li>
-          <a href="#" class="order">
-            اطلب مسكنك
-          </a>
-        </li>
-        <li>
-          <a href="#" class="user-login">
-            <i class="fa-regular fa-user"></i>
-          دخول
-          </a>
-        </li>
-      </ul>
-    </ul>
-
-   
-  </div>
-</div>
-
     <!-- Start Header -->
     <header class="header">
         <!-- Start Navbar -->
@@ -89,10 +39,13 @@
         <a class="navbar-brand" href="#">
           <img src="img/logo.png" alt="logo">
         </a>
-        <button class="navbar-toggler" type="button" id="btn-nav">
-          <i class="fa-solid fa-bars"></i>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarTogglerDemo01">
+          <div class="navbar-toggler-icon">
+            <i class="fa-solid fa-bars"></i>
+          </div>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
           <ul class="navbar-nav">
             <li class="nav-item active">
               <a class="nav-link hvr-underline-from-center" href="#">الرئيسيه</a>
@@ -126,6 +79,7 @@
               </a>
             </li>
           </ul>
+
         </div>
       </nav>
     </div>
@@ -181,7 +135,7 @@
       <div class="container">
         <form class="form-style" action="">
         <div class="form-row">
-          <div class="form-group col-md-3 col-sm-6">
+          <div class="form-group col-md-3 col-sm-6 col-6">
             <select id="inputState" class="form-control">
               <option selected> الدولة</option>
               <option> السعوديه </option>
@@ -189,7 +143,7 @@
               <option> دبى </option>
             </select>
           </div>
-          <div class="form-group col-md-3 col-sm-6">
+          <div class="form-group col-md-3 col-sm-6 col-6">
             <select id="inputState" class="form-control">
               <option selected> المدينه</option>
               <option> السعوديه </option>
@@ -197,7 +151,7 @@
               <option> دبى </option>
             </select>
           </div>
-          <div class="form-group col-md-3 col-sm-6">
+          <div class="form-group col-md-3 col-sm-6 col-6">
             <select id="inputState" class="form-control">
               <option selected> نوع العقار</option>
               <option> إيجار </option>
@@ -205,7 +159,7 @@
               <option> اخرى </option>
             </select>
           </div>
-          <div class="form-group col-md-3 col-sm-6">
+          <div class="form-group col-md-3 col-sm-6 col-6">
             <select id="inputState" class="form-control">
               <option selected> للبيع</option>
               <option> السعوديه </option>
@@ -213,7 +167,7 @@
               <option> دبى </option>
             </select>
           </div>
-          <div class="form-group col-md-3 col-sm-6">
+          <div class="form-group col-md-3 col-sm-6 col-6">
             <select id="inputState" class="form-control">
               <option selected> عدد الغرف</option>
               <option> 3 غرف </option>
@@ -221,7 +175,7 @@
               <option> غرفة </option>
             </select>
           </div>
-          <div class="form-group col-md-3 col-sm-6">
+          <div class="form-group col-md-3 col-sm-6 col-6">
             <select id="inputState" class="form-control">
               <option selected> أقل سعر</option>
               <option> 1,000 </option>
@@ -229,7 +183,7 @@
               <option> 3,000 </option>
             </select>
           </div>
-          <div class="form-group col-md-3 col-sm-6">
+          <div class="form-group col-md-3 col-sm-6 col-6">
             <select id="inputState" class="form-control">
               <option selected> أعلى سعر</option>
               <option> 1,000 </option>
@@ -237,7 +191,7 @@
               <option> 3,000 </option>
             </select>
           </div>
-          <div class="form-group col-md-3 col-sm-6">
+          <div class="form-group col-md-3 col-sm-6 col-6">
             <button type="submit" class="search"> إبحـث</button>
           </div>
           </div>
@@ -1027,24 +981,24 @@
         <h1> تواصل معنا الان </h1>
       </div>
       <div class="row no-gutters">
-        <div class="col-md-4 col-sm-12">
-          <a href="mailto:Info@elmarproperty.com" class="box-icon">
+        <div class="col-md-4 col-sm-4 col-4">
+          <a href="mailto:Info@elmarproperty.com" class="box-icon hvr-float-shadow">
             <i class="fa-regular fa-envelope icon"></i>
             <span> البريد الإلكترونى </span>
             <p> Info@elmarproperty.com </p>
           </a>
         </div>
 
-        <div class="col-md-4 col-sm-12">
-          <a href="tel:+996010101010101" class="box-icon center-box">
+        <div class="col-md-4 col-sm-4 col-4">
+          <a href="tel:+996010101010101" class="box-icon center-box hvr-float-shadow">
             <i class="fa-solid fa-phone-flip icon"></i>
             <span> هاتف المبيعات </span>
             <p> +996010101010101 </p>
           </a>
         </div>
 
-        <div class="col-md-4 col-sm-12">
-          <a href="https://wa.me/+996010101010101" target="_blank" class="box-icon">
+        <div class="col-md-4 col-sm-4 col-4">
+          <a href="https://wa.me/+996010101010101" target="_blank" class="box-icon hvr-float-shadow">
             <i class="fa-brands fa-whatsapp icon"></i>
             <span> واتس اَب </span>
             <p> +996010101010101 </p>
@@ -1068,7 +1022,7 @@
       <i class="fa-solid fa-circle circle"></i>
       <!-- Icons -->
       <div class="row">
-        <div class="col-lg-3 col-md-3 col-sm-6">
+        <div class="col-lg-3 col-md-3 col-sm-6 col-6">
           <div class="icon">
             <i class="fa-solid fa-bag-shopping svg-icon"></i>
             <h4>تاريخ
@@ -1077,7 +1031,7 @@
             <p> 2016 </p>
           </div>
         </div>
-        <div class="col-lg-3 col-md-3 col-sm-6">
+        <div class="col-lg-3 col-md-3 col-sm-6 col-6">
           <div class="icon">
             <i class="fa-solid fa-hand-holding-heart svg-icon"></i>
             <h4>الوحدات 
@@ -1086,7 +1040,7 @@
             <p class="counter-value" data-count="68"> + 0 </p>
           </div>
         </div>
-        <div class="col-lg-3 col-md-3 col-sm-6">
+        <div class="col-lg-3 col-md-3 col-sm-6 col-6">
           <div class="icon">
             <i class="fa-solid fa-caravan svg-icon"></i>
             <h4>الوحدات
@@ -1095,7 +1049,7 @@
             <p class="counter-value" data-count="722"> + 0 </p>
           </div>
         </div>
-        <div class="col-lg-3 col-md-3 col-sm-6">
+        <div class="col-lg-3 col-md-3 col-sm-6 col-6">
           <div class="icon">
             <i class="fa-solid fa-building svg-icon"></i>
             <h4> إجمالى 
@@ -1253,6 +1207,8 @@
       </div>
     </div>
   </div>
+
+
     <!-- Scroll Btn --> 
     <div class="scroll-btn">
       <i class="fa-solid fa-chevron-up top"></i>
@@ -1260,31 +1216,27 @@
 
 
     <script src="js/jquery-1.8.3.min.js"></script>    
-    <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/all.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/jquery-modal-video.min.js"></script>
-    <!-- Swiper JS -->
+    <script src="js/select2.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
     <script>
-      // Modal video
-    $(".js-modal-btn").modalVideo();
+  
 
        // navbar mobile
       $(function () {  
-        $("#menu").hide();
+        $(".menu").hide();
 
-        $(".navbar-toggler").on('click', function() {
-            $("#menu").slideToggle( "slow", function() {
-              transition: "0.2s all"
+        $(".nav-open").on('click', function() {
+            $(".collapse").slideToggle( "fast", function() {
+              transition: "0.1s all"
       });
         });
 
         $(".close-icon").on('click', function() {
-            $("#menu").hide();
-            $(".navbar-toggler").show();
+            $(".collapse").hide();
+            $(".nav-open").show();
         });
       });
 
